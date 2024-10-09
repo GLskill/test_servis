@@ -27,3 +27,4 @@ class EmployeeDAO:
     def read_employee_by_id(self, id: str):
         employee = db.employees.find_one({"_id": ObjectId(id)})
         return Employee(**employee) if employee else None
+
