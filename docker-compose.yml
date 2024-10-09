@@ -9,7 +9,7 @@ services:
       - mongo_data:/data/db
 
   employee-service:
-    build: .
+    build: employee-service
     ports:
       - "8000:8000"
     depends_on:
